@@ -28,7 +28,7 @@ public class LambdaHandlerTest {
         APIGatewayProxyRequestEvent input = new APIGatewayProxyRequestEvent();
         input.setPath("/path/to/resource");
 
-        APIGatewayProxyResponseEvent responseEvent = handler.handleRequest(input, contex);
+        APIGatewayProxyResponseEvent responseEvent = handler.handleRequest(input, context);
 
         assertNotNull(responseEvent);
     }
